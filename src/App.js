@@ -2,6 +2,7 @@
 import './App.css';
 import { Faculty } from './Component/Faculty';
 import Student from './Component/Student';
+import Students from './Component/Students';
 
     
 
