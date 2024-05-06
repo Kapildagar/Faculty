@@ -60,12 +60,12 @@ const Student = () => {
                         )
                     })}
                 </div>
-                <div className={`border-[1px] border-black w-9/12 sm:h-${StudentData.length > 0&&"[400px]"} overflow-y-${StudentData.length > 0&&"scroll````"}`}>
+                <div className={`border-[1px] border-black w-9/12 `}>
                     {/* <h1>{StudentData?StudentData:"No Data"}</h1> */}
                     <div>
                         <h1 className='text-[30px] text-blue-600 w-fit mx-auto font-bold'>Student Data</h1>
                         {StudentData.length > 0 ?
-                            <div>
+                            <div className='sm:h-[400px] overflow-y-scroll'>
                                 {StudentData && StudentData.map((el, ind) => {
                                     return (
                                         <div key={ind} className='flex flex-col  border-[1px]  border-black  my-[10px] w-[250px] bg-gray-300 mx-auto p-[10px]'>
